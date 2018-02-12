@@ -120,6 +120,10 @@ public class AddressBook {
     public UniqueTagList getAllTags() {
         return new UniqueTagList(allTags);
     }
+    
+    public void sort() {
+        allPersons.sort();
+    }
 
     @Override
     public boolean equals(Object other) {

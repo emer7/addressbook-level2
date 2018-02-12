@@ -128,6 +128,10 @@ public class UniquePersonList implements Iterable<Person> {
     public void clear() {
         internalList.clear();
     }
+    
+    public void sort() {
+        internalList.sort(null);
+    }
 
     @Override
     public Iterator<Person> iterator() {

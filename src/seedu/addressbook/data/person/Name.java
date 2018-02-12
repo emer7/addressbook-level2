@@ -47,6 +47,10 @@ public class Name {
     public String toString() {
         return fullName;
     }
+    
+    public int compareTo(Name other) {
+        return this.fullName.compareTo(other.fullName);
+    }
 
     @Override
     public boolean equals(Object other) {
