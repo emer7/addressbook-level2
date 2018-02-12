@@ -138,6 +138,21 @@
 || Enter command: || [Command entered:  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy]
 || This person already exists in the address book
 || ===================================================
+|| Enter command: || [Command entered:  add Naruto p/1234 e/naruto@random.com a/11, konoha]
+|| New person added: Naruto Phone: 1234 Email: naruto@random.com Address: 11, konoha Tags: 
+|| ===================================================
+|| Enter command: || [Command entered:  add Sasuke p/2345 e/sasuke@random.com a/33, konoha]
+|| New person added: Sasuke Phone: 2345 Email: sasuke@random.com Address: 33, konoha Tags: 
+|| ===================================================
+|| Enter command: || [Command entered:  add Zetsu p/7485 e/zetsu@random.com a/77, homeless]
+|| New person added: Zetsu Phone: 7485 Email: zetsu@random.com Address: 77, homeless Tags: 
+|| ===================================================
+|| Enter command: || [Command entered:  add Sakura p/9874 e/sakura@random.com a/55, konoha]
+|| New person added: Sakura Phone: 9874 Email: sakura@random.com Address: 55, konoha Tags: 
+|| ===================================================
+|| Enter command: || [Command entered:  add Kakashi p/6985 e/kakashi@random.com a/99, konoha]
+|| New person added: Kakashi Phone: 6985 Email: kakashi@random.com Address: 99, konoha Tags: 
+|| ===================================================
 || Enter command: || [Command entered:  view]
 || Invalid command format! 
 || view: Views the non-private details of the person identified by the index number in the last shown person listing.
@@ -268,8 +283,13 @@
 || 	2. Betsy Choo Tags: [secretive]
 || 	3. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
 || 	4. Esther Potato Phone: 555555 Email: esther@not.a.real.potato Tags: [tubers][starchy]
+|| 	5. Naruto Phone: 1234 Email: naruto@random.com Address: 11, konoha Tags: 
+|| 	6. Sasuke Phone: 2345 Email: sasuke@random.com Address: 33, konoha Tags: 
+|| 	7. Zetsu Phone: 7485 Email: zetsu@random.com Address: 77, homeless Tags: 
+|| 	8. Sakura Phone: 9874 Email: sakura@random.com Address: 55, konoha Tags: 
+|| 	9. Kakashi Phone: 6985 Email: kakashi@random.com Address: 99, konoha Tags: 
 || 
-|| 4 persons listed!
+|| 9 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  delete 4]
 || Deleted Person: Esther Potato Phone: 555555 Email: esther@not.a.real.potato Address: (private) 555, epsilon street Tags: [tubers][starchy]
@@ -278,8 +298,13 @@
 || 	1. Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
 || 	2. Betsy Choo Tags: [secretive]
 || 	3. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	4. Naruto Phone: 1234 Email: naruto@random.com Address: 11, konoha Tags: 
+|| 	5. Sasuke Phone: 2345 Email: sasuke@random.com Address: 33, konoha Tags: 
+|| 	6. Zetsu Phone: 7485 Email: zetsu@random.com Address: 77, homeless Tags: 
+|| 	7. Sakura Phone: 9874 Email: sakura@random.com Address: 55, konoha Tags: 
+|| 	8. Kakashi Phone: 6985 Email: kakashi@random.com Address: 99, konoha Tags: 
 || 
-|| 3 persons listed!
+|| 8 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  delete 1]
 || Deleted Person: Adam Brown Phone: 111111 Email: adam@gmail.com Address: 111, alpha street Tags: 
@@ -287,8 +312,27 @@
 || Enter command: || [Command entered:  list]
 || 	1. Betsy Choo Tags: [secretive]
 || 	2. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	3. Naruto Phone: 1234 Email: naruto@random.com Address: 11, konoha Tags: 
+|| 	4. Sasuke Phone: 2345 Email: sasuke@random.com Address: 33, konoha Tags: 
+|| 	5. Zetsu Phone: 7485 Email: zetsu@random.com Address: 77, homeless Tags: 
+|| 	6. Sakura Phone: 9874 Email: sakura@random.com Address: 55, konoha Tags: 
+|| 	7. Kakashi Phone: 6985 Email: kakashi@random.com Address: 99, konoha Tags: 
 || 
-|| 2 persons listed!
+|| 7 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  sort]
+|| Address Book sorted
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Betsy Choo Tags: [secretive]
+|| 	2. Dickson Ee Phone: 444444 Address: 444, delta street Tags: [friends]
+|| 	3. Kakashi Phone: 6985 Email: kakashi@random.com Address: 99, konoha Tags: 
+|| 	4. Naruto Phone: 1234 Email: naruto@random.com Address: 11, konoha Tags: 
+|| 	5. Sakura Phone: 9874 Email: sakura@random.com Address: 55, konoha Tags: 
+|| 	6. Sasuke Phone: 2345 Email: sasuke@random.com Address: 33, konoha Tags: 
+|| 	7. Zetsu Phone: 7485 Email: zetsu@random.com Address: 77, homeless Tags: 
+|| 
+|| 7 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  clear]
 || Address book has been cleared!
