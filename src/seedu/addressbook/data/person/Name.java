@@ -47,7 +47,12 @@ public class Name {
     public String toString() {
         return fullName;
     }
-    
+
+    /**
+     * Compare this Name instance with other Name instance
+     * @param other the other name instance to compare to
+     * @return comparison value
+     */
     public int compareTo(Name other) {
         return this.fullName.compareTo(other.fullName);
     }

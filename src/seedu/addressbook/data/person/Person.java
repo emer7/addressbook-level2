@@ -2,7 +2,6 @@ package seedu.addressbook.data.person;
 
 import seedu.addressbook.data.tag.UniqueTagList;
 
-import java.util.Comparator;
 import java.util.Objects;
 
 /**
@@ -66,7 +65,12 @@ public class Person implements ReadOnlyPerson, Comparable<Person> {
     public void setTags(UniqueTagList replacement) {
         tags.setTags(replacement);
     }
-    
+
+    /**
+     * Compare this Person instance with other Person instance
+     * @param other the other Person object to compare to
+     * @return comparison value
+     */
     public int compareTo(Person other) {
         return this.name.compareTo(other.name);
     }

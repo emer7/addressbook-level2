@@ -120,7 +120,10 @@ public class AddressBook {
     public UniqueTagList getAllTags() {
         return new UniqueTagList(allTags);
     }
-    
+
+    /**
+     * Sort all persons in Address Book based on alphabetical order of name
+     */
     public void sort() {
         allPersons.sort();
     }

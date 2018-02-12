@@ -128,7 +128,10 @@ public class UniquePersonList implements Iterable<Person> {
     public void clear() {
         internalList.clear();
     }
-    
+
+    /**
+     * Sort all persons in list based on alphabetical order of name
+     */
     public void sort() {
         internalList.sort(null);
     }
