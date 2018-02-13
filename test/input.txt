@@ -53,13 +53,6 @@
 
   # should not allow adding duplicate persons
   add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy
-  
-  # adding persons for future tests
-  add Naruto p/1234 e/naruto@random.com a/11, konoha
-  add Sasuke p/2345 e/sasuke@random.com a/33, konoha
-  add Zetsu p/7485 e/zetsu@random.com a/77, homeless
-  add Sakura p/9874 e/sakura@random.com a/55, konoha
-  add Kakashi p/6985 e/kakashi@random.com a/99, konoha
 
 ##########################################################
 # test view/viewall persons command
@@ -148,20 +141,30 @@
   list
 
 ##########################################################
-# test sort command
-##########################################################
-
-  # sort
-  sort
-  list
-
-##########################################################
 # test clear command
 ##########################################################
 
   # clears all
   clear
   list
+
+##########################################################
+# test sort command
+##########################################################
+
+  # adds persons for sort tests
+  add Naruto p/1234 e/naruto@random.com a/11, konoha
+  add Sasuke p/2345 e/sasuke@random.com a/33, konoha
+  add Zetsu p/7485 e/zetsu@random.com a/77, homeless
+  add Sakura p/9874 e/sakura@random.com a/55, konoha
+  add Kakashi p/6985 e/kakashi@random.com a/99, konoha
+
+  # sorts
+  sort
+  list
+
+  # clears all
+  clear
 
 ##########################################################
 # test exit command
