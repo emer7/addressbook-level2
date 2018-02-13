@@ -12,6 +12,7 @@ public class Address {
     public static final String MESSAGE_ADDRESS_CONSTRAINTS = "Person addresses can be in any format";
     public static final String ADDRESS_VALIDATION_REGEX = ".+";
 
+    public final String value;
     private Block blockValue;
     private Street streetValue;
     private Unit unitValue;
@@ -36,6 +37,7 @@ public class Address {
         this.streetValue = new Street(trimmedAddressSplittedByComma[1]);
         this.unitValue = new Unit(trimmedAddressSplittedByComma[2]);
         this.postalCodeValue = new PostalCode(trimmedAddressSplittedByComma[3]);
+        this.value = blockValue.value + "," + streetValue.value + "," + unitValue.value + "," + postalCodeValue.value;
     }
 
     /**
@@ -47,19 +49,19 @@ public class Address {
 
     @Override
     public String toString() {
-        return blockValue.value + "," + streetValue.value + "," + unitValue.value + "," + postalCodeValue.value;
+        return value;
     }
 
     @Override
     public boolean equals(Object other) {
         return other == this // short circuit if same object
                 || (other instanceof Address // instanceof handles nulls
-                && this.toString().equals(((Address) other).toString())); // state check
+                && this.value.equals(((Address) other).toString())); // state check
     }
 
     @Override
     public int hashCode() {
-        return toString().hashCode();
+        return value.hashCode();
     }
 
     public boolean isPrivate() {
